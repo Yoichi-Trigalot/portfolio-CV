@@ -1,73 +1,145 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My profil</title>
+  <title>Yoïchi Trigalot - Développeur Web - Ruby on rails</title>
+  <meta name="description" content="Developpeur Web Full stack | Ruby on rails | Freelance - Recherche de mission active">
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/e0a91abac6.js" crossorigin="anonymous"></script>
   <!-- css style sheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.scss">
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Nav icon  -->
+  <link rel="icon" type="image/png" href="/images/YT.png"/>
   <!-- responsive -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"  content="width=device-width, initial-scale=1">
 </head>
 <body>
   <!-- Navbar -->
 
-  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon shadow-sm">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div class="my-navbar">
 
+    <div class="my-nav-items">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Formation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Experiences</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item dropdown">
-          <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="#" />
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-          </div>
-        </li>
-      </ul>
+      <a href="#" class="my-nav-links"><i class="fas fa-home"></i></a>
+
+      <a href="#about" class="my-nav-links">A propos <i class="far fa-user-circle ml-2"></i></a>
+
+      <a href="#skills" class="my-nav-links">Compétences <i class="fas fa-cogs ml-2"></i></a>
+
+      <a href="#experiences" class="my-nav-links">Expériences <i class="fas fa-book ml-2"></i></a>
+
+      <a href="#achievements" class="my-nav-links">Réalisations <i class="fas fa-award ml-2"></i></i></a>
+
+      <a href="#contact" class="my-nav-links">Contact <i class="far fa-address-card ml-2"></i></a>
     </div>
+
   </div>
+
+  <!-- Javascript -->
+
+  <script>
+    // scroll
+
+    // active item
+    const linksContainer = document.querySelector('.my-nav-items');
+    const myLinks = linksContainer.querySelectorAll('.my-nav-links');
+
+    for (let i = 0; i < myLinks.length; i++) {
+      myLinks[i].addEventListener("click", function() {
+        let current = document.querySelector(".active");
+        console.log(current);
+        current.classList.remove('active');
+        this.classList.add("active");
+      });
+    }
+
+  </script>
 
   <!-- Content -->
 
+    <div class="banner">
+
+    </div>
+
   <div class="container">
+    <div class="row">
+      <div class="infos">
 
-    <h1>Yoïchi Trigalot</h1>
-    <div class="circle">
-      <img src="/images/profile.png" class="rounded-circle">
+      <h1>Yoïchi Trigalot</h1>
+      <div>
+        <h3 id="about" class="pt-5">A propos</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio laudantium, esse laboriosam nulla incidunt maxime, in eum omnis non sed alias. Tempore hic harum dolore veniam sunt, odit nemo voluptate.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio laudantium, esse laboriosam nulla incidunt maxime, in eum omnis non sed alias. Tempore hic harum dolore veniam sunt, odit nemo voluptate.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio laudantium, esse laboriosam nulla incidunt maxime, in eum omnis non sed alias. Tempore hic harum dolore veniam sunt, odit nemo voluptate.
+      </div>
+
+
+      <div class="profile-picture">
+      </div>
+
+      <p>
+        Développeur web Junior full stack <br>
+        <strong> Ruby on rails</strong> <br>
+        Freelance
+      </p>
+
+      </div>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum omnis doloremque, dolore aliquid, laudantium beatae mollitia neque ullam quia incidunt consequuntur nisi nobis ab, id nostrum consectetur nesciunt eaque voluptates?</p>
 
+    <div>
+        <h3 id="skills" class="pt-5">Compétences</h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorem ullam laudantium sint nisi voluptatibus, deserunt molestias. Sed minus in nam sint quas magnam hic esse. Porro totam, accusantium quos?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorem ullam laudantium sint nisi voluptatibus, deserunt molestias. Sed minus in nam sint quas magnam hic esse. Porro totam, accusantium quos?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorem ullam laudantium sint nisi voluptatibus, deserunt molestias. Sed minus in nam sint quas magnam hic esse. Porro totam, accusantium quos?
+      </div>
+
+    <h3 id="experiences" class="pt-5">Expériences</h3>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo architecto aliquid veritatis. Ratione autem expedita vel est mollitia saepe ad culpa! Dicta quos veniam aliquid minima, voluptates magnam molestias maiores!orem ipsum dolor sit amet, consectetur adipisicing elit. Nemo architecto aliquid veritatis. Ratione autem expedita vel est mollitia saepe ad culpa! Dicta quos veniam aliquid minima, voluptates magnam molestias maiores!orem ipsum dolor sit amet, consectetur adipisicing elit. Nemo architecto aliquid veritatis. Ratione autem expedita vel est mollitia saepe ad culpa! Dicta quos veniam aliquid minima, voluptates magnam mole
+    </div>
+
+    <div>
+      <h3 id="achievements" class="pt-5">Réalisations</h3>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sapiente aperiam sed quasi eveniet fugit possimus, aspernatur nulla dolorem fugiat iure. Ratione eveniet hic, optio assumenda alias nulla, modi eius.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sapiente aperiam sed quasi eveniet fugit possimus, aspernatur nulla dolorem fugiat iure. Ratione eveniet hic, optio assumenda alias nulla, modi eius.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sapiente aperiam sed quasi eveniet fugit possimus, aspernatur nulla dolorem fugiat iure. Ratione eveniet hic, optio assumenda alias nulla, modi eius.
+    </div>
+
+    <h3 id="contact" class="pt-5">Contact</h3>
+    <div class="row my-5">
+      <div class="col-8">
+        <div class="socials p-5">
+          <p> Localisation : Les Sables d'Olonnes</p>
+          <p> Email : yoichi.trigalot@gmail.com</p>
+          <br>
+          <p>Retrouves moi sur mes différents réseaux sociaux</p>
+
+          <a href="https://github.com/Yoichi-Trigalot" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/yoichi.t/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/y-trigalot/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+      </div>
+      <div class="col-4">
+        <div class="email-form pt-5 px-5">
+
+          <h4 class='mb-4'>Contactez moi !</h4>
+
+          <form action="https://formspree.io/xyypawan" method="POST">
+            <input type="hidden" name="_next" value="https://www.yoichitrigalot.com/"/>
+
+            <div class="form-group">
+              <input type="text" name="_replyto" id="_replyto" class="form-control" placeholder="Votre email">
+            </div>
+
+            <div class="form-group">
+              <textarea name="message" id="message" class="form-control" rows="5" placeholder="Ecrivez vore message ici"></textarea>
+            </div>
+
+            <div class="row justify-content-center">
+              <button type="submit" class="btn-send">Envoyer</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- ooter -->
-  <div class="footer">
-    <div class="footer-links">
-      <a href="https://github.com/Yoichi-Trigalot" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.facebook.com/yoichi.t/" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.linkedin.com/in/y-trigalot/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <div class="footer-copyright">
-      Feel free to contact me
-    </div>
-  </div>
   <!-- Bootstrap Javascript -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
