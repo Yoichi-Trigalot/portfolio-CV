@@ -13,34 +13,33 @@
   <link rel="icon" type="image/png" href="/images/YT.png"/>
   <!-- responsive -->
   <meta name="viewport"  content="width=device-width, initial-scale=1">
+  <!-- Javascript -->
 </head>
 <body>
   <!-- Navbar -->
 
-  <div class="my-navbar">
+  <div class="my-navbar-black hidden fixed-top">
 
     <div class="my-nav-items">
 
-      <a href="#" class="my-nav-links"><i class="fas fa-home"></i></a>
+      <a href="#about" class="my-nav-links">A propos</a>
 
-      <a href="#about" class="my-nav-links">A propos <i class="far fa-user-circle ml-2"></i></a>
+      <a href="#skills" class="my-nav-links">Compétences</a>
 
-      <a href="#skills" class="my-nav-links">Compétences <i class="fas fa-cogs ml-2"></i></a>
+      <a href="#experiences" class="my-nav-links">Expériences</a>
 
-      <a href="#experiences" class="my-nav-links">Expériences <i class="fas fa-book ml-2"></i></a>
+      <a href="#achievements" class="my-nav-links">Réalisations</a>
 
-      <a href="#achievements" class="my-nav-links">Réalisations <i class="fas fa-award ml-2"></i></i></a>
-
-      <a href="#contact" class="my-nav-links">Contact <i class="far fa-address-card ml-2"></i></a>
+      <a href="#contact" class="my-nav-links">Contact</a>
     </div>
 
   </div>
 
+
+    <a href="#" class="fixe-top-button hidden"><div><i class="fas fa-chevron-circle-up"></i></div></a>
+
   <!-- Javascript -->
-
   <script>
-    // scroll
-
     // active item
     const linksContainer = document.querySelector('.my-nav-items');
     const myLinks = linksContainer.querySelectorAll('.my-nav-links');
@@ -54,60 +53,90 @@
       });
     }
 
+    // transparent nav bar
+    const initUpdateNavbarOnScroll = () => {
+      const navbar = document.querySelector('.my-navbar-black');
+      const topButton = document.querySelector('.fixe-top-button')
+      if (navbar) {
+        window.addEventListener('scroll', () => {
+          if (window.scrollY >= window.innerHeight) {
+            navbar.classList.remove('hidden');
+            navbar.classList.add('my-navbar-black');
+            topButton.classList.remove('hidden');
+          } else {
+            navbar.classList.add('hidden');
+            navbar.classList.remove('my-navbar-black');
+            topButton.classList.add('hidden');
+          }
+        });
+      }
+    };
+    initUpdateNavbarOnScroll();
   </script>
 
-  <!-- Content -->
+    <div class="banner p-5 d-flex">
 
-    <div class="banner">
+      <!-- typed -->
+      <div class="row">
+        <div id="typewriter"></div>
+      </div>
 
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      <script type="text/javascript">
+        const instance = new Typewriter('#typewriter', {
+          strings: "Bienvenue sur mon site, <br> Bonne visite",
+          autoStart: true,
+          loop: true,
+        });
+      </script>
+      <div class="row">
+        <div class="down-button" style="color: white"><a href="#about"><i class="fas fa-chevron-circle-down"></i></a></div>
+      </div>
     </div>
 
   <div class="container">
-    <div class="row">
-      <div class="infos">
+    <div class="row" id="about" >
+      <div class="infos d-flex justify-content-between">
 
-      <h1>Yoïchi Trigalot</h1>
       <div>
-        <h3 id="about" class="pt-5">A propos</h3>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio laudantium, esse laboriosam nulla incidunt maxime, in eum omnis non sed alias. Tempore hic harum dolore veniam sunt, odit nemo voluptate.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio laudantium, esse laboriosam nulla incidunt maxime, in eum omnis non sed alias. Tempore hic harum dolore veniam sunt, odit nemo voluptate.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio laudantium, esse laboriosam nulla incidunt maxime, in eum omnis non sed alias. Tempore hic harum dolore veniam sunt, odit nemo voluptate.
+        <h3 class="pl-5">À propos<i class="far fa-user-circle ml-3"></i></h3>
+        <h1> Yoïchi Trigalot</h1>
+        <p> 🧑🏻‍💻 Développeur Web Junior</p>
+        <p> 💎 Full stack Ruby on rails</p>
+
       </div>
 
 
       <div class="profile-picture">
       </div>
 
-      <p>
-        Développeur web Junior full stack <br>
-        <strong> Ruby on rails</strong> <br>
-        Freelance
-      </p>
 
       </div>
     </div>
 
     <div>
-        <h3 id="skills" class="pt-5">Compétences</h3>
+        <h3 id="skills" class="pl-5 pt-5">Compétences<i class="fas fa-cogs ml-3"></i></h3>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorem ullam laudantium sint nisi voluptatibus, deserunt molestias. Sed minus in nam sint quas magnam hic esse. Porro totam, accusantium quos?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorem ullam laudantium sint nisi voluptatibus, deserunt molestias. Sed minus in nam sint quas magnam hic esse. Porro totam, accusantium quos?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorem ullam laudantium sint nisi voluptatibus, deserunt molestias. Sed minus in nam sint quas magnam hic esse. Porro totam, accusantium quos?
       </div>
 
-    <h3 id="experiences" class="pt-5">Expériences</h3>
+    <h3 id="experiences" class="pl-5 pt-5">Expériences<i class="fas fa-book ml-3"></i></h3>
     <div>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo architecto aliquid veritatis. Ratione autem expedita vel est mollitia saepe ad culpa! Dicta quos veniam aliquid minima, voluptates magnam molestias maiores!orem ipsum dolor sit amet, consectetur adipisicing elit. Nemo architecto aliquid veritatis. Ratione autem expedita vel est mollitia saepe ad culpa! Dicta quos veniam aliquid minima, voluptates magnam molestias maiores!orem ipsum dolor sit amet, consectetur adipisicing elit. Nemo architecto aliquid veritatis. Ratione autem expedita vel est mollitia saepe ad culpa! Dicta quos veniam aliquid minima, voluptates magnam mole
     </div>
 
     <div>
-      <h3 id="achievements" class="pt-5">Réalisations</h3>
+      <h3 id="achievements" class="pl-5 pt-5">Réalisations<i class="fas fa-award ml-3"></i></h3>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sapiente aperiam sed quasi eveniet fugit possimus, aspernatur nulla dolorem fugiat iure. Ratione eveniet hic, optio assumenda alias nulla, modi eius.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sapiente aperiam sed quasi eveniet fugit possimus, aspernatur nulla dolorem fugiat iure. Ratione eveniet hic, optio assumenda alias nulla, modi eius.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sapiente aperiam sed quasi eveniet fugit possimus, aspernatur nulla dolorem fugiat iure. Ratione eveniet hic, optio assumenda alias nulla, modi eius.
     </div>
 
-    <h3 id="contact" class="pt-5">Contact</h3>
+    <h3 id="contact" class="pl-5 pt-5">Contact<i class="far fa-address-card ml-3"></i></h3>
     <div class="row my-5">
       <div class="col-8">
         <div class="socials p-5">
-          <p> Localisation : Les Sables d'Olonnes</p>
-          <p> Email : yoichi.trigalot@gmail.com</p>
+          <p> 📍 Les Sables d'Olonnes</p>
+          <p> ✉️ yoichi.trigalot@gmail.com</p>
           <br>
-          <p>Retrouves moi sur mes différents réseaux sociaux</p>
+          <p> Retrouves moi sur mes différents réseaux sociaux </p>
 
           <a href="https://github.com/Yoichi-Trigalot" target="_blank"><i class="fab fa-github"></i></a>
           <a href="https://www.facebook.com/yoichi.t/" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -144,5 +173,6 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </body>
 </html>
