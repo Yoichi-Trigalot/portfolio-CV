@@ -84,9 +84,10 @@
       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
       <script type="text/javascript">
         const instance = new Typewriter('#typewriter', {
-          strings: "Bienvenue sur mon site, <br> Bonne visite",
+          strings: "Bonjour ! Je m'appelle <strong>Yoïchi Trigalot</strong>,<br> Développeur web Full Stack - <em>Junior</em> <br> Freelance <br> Bienvenue sur mon site et bonne visite...",
           autoStart: true,
           loop: true,
+          delay: 80,
         });
       </script>
       <div class="row">
@@ -96,74 +97,108 @@
 
   <div class="container">
     <div class="row" id="about" >
-      <div class="infos d-flex justify-content-between">
+      <div class="infos">
+        <h3 class="text-center"><i class="far fa-user-circle"></i></h3>
+        <h3 class="mb-4 text-center">À propos</h3>
 
-      <div>
-        <h3 class="pl-5">À propos<i class="far fa-user-circle ml-3"></i></h3>
-        <h1> Yoïchi Trigalot</h1>
-        <p> 🧑🏻‍💻 Développeur Web Junior</p>
-        <p> 💎 Full stack Ruby on rails</p>
-
-      </div>
-
-
-      <div class="profile-picture">
-      </div>
-
-
-      </div>
-    </div>
-
-    <div>
-        <h3 id="skills" class="pl-5 pt-5">Compétences<i class="fas fa-cogs ml-3"></i></h3>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorem ullam laudantium sint nisi voluptatibus, deserunt molestias. Sed minus in nam sint quas magnam hic esse. Porro totam, accusantium quos?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorem ullam laudantium sint nisi voluptatibus, deserunt molestias. Sed minus in nam sint quas magnam hic esse. Porro totam, accusantium quos?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorem ullam laudantium sint nisi voluptatibus, deserunt molestias. Sed minus in nam sint quas magnam hic esse. Porro totam, accusantium quos?
-      </div>
-
-    <h3 id="experiences" class="pl-5 pt-5">Expériences<i class="fas fa-book ml-3"></i></h3>
-    <div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo architecto aliquid veritatis. Ratione autem expedita vel est mollitia saepe ad culpa! Dicta quos veniam aliquid minima, voluptates magnam molestias maiores!orem ipsum dolor sit amet, consectetur adipisicing elit. Nemo architecto aliquid veritatis. Ratione autem expedita vel est mollitia saepe ad culpa! Dicta quos veniam aliquid minima, voluptates magnam molestias maiores!orem ipsum dolor sit amet, consectetur adipisicing elit. Nemo architecto aliquid veritatis. Ratione autem expedita vel est mollitia saepe ad culpa! Dicta quos veniam aliquid minima, voluptates magnam mole
-    </div>
-
-    <div>
-      <h3 id="achievements" class="pl-5 pt-5">Réalisations<i class="fas fa-award ml-3"></i></h3>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sapiente aperiam sed quasi eveniet fugit possimus, aspernatur nulla dolorem fugiat iure. Ratione eveniet hic, optio assumenda alias nulla, modi eius.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sapiente aperiam sed quasi eveniet fugit possimus, aspernatur nulla dolorem fugiat iure. Ratione eveniet hic, optio assumenda alias nulla, modi eius.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sapiente aperiam sed quasi eveniet fugit possimus, aspernatur nulla dolorem fugiat iure. Ratione eveniet hic, optio assumenda alias nulla, modi eius.
-    </div>
-
-    <h3 id="contact" class="pl-5 pt-5">Contact<i class="far fa-address-card ml-3"></i></h3>
-    <div class="row my-5">
-      <div class="col-8">
-        <div class="socials p-5">
-          <p> 📍 Les Sables d'Olonnes</p>
-          <p> ✉️ yoichi.trigalot@gmail.com</p>
-          <br>
-          <p> Retrouves moi sur mes différents réseaux sociaux </p>
-
-          <a href="https://github.com/Yoichi-Trigalot" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.facebook.com/yoichi.t/" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.linkedin.com/in/y-trigalot/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <div class="row">
+        <div class="col d-flex justify-content-around">
+          <div class="d-flex flex-column justify-content-around">
+            <h1> Yoïchi Trigalot</h1>
+            <p><strong> 🧑🏻‍💻 Développeur Web Junior</strong></p>
+            <p><strong> 💎 Full stack Ruby on rails</strong></p>
+          </div>
         </div>
+        <div class="col d-flex justify-content-center">
+          <div class="profile-picture"></div>
+        </div>
+      </div>
+      <div class="row p-4 d-flex">
+        <p class="px-5 text-justify">
+          <strong>“</strong> <tab>  Après de nombreuses années à travailler dans la restauration, j'ai pris la décisions de me reconvertir en tant que Développeur web. J'ai donc effectué une formation de <em>concepteur développeur d'application web</em>, dispensée par le Wagon Nantes. Cette éxpérience, en plus de m'avoir apporté les connaissances nécessaires, elle m'a permis de confirmé ma passion pour le code, et les nouvelles technologies.<br> Créatif, à l'écoutes et enthousiaste, j'ai envie d'expérimenter et d'apprendre de nouvelles choses sans cesse.  <strong>”</strong>
+        </p>
+      </div>
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="btn-download">
+          <a href="#" download><button class='btn'>Télécharger mon CV</button></a>
+        </div>
+      </div>
+
+
+
 
       </div>
-      <div class="col-4">
-        <div class="email-form pt-5 px-5">
+    </div>
 
-          <h4 class='mb-4'>Contactez moi !</h4>
+    <div class="row" id="skills">
+      <div class="competences">
+        <h3 class="text-center"><i class="fas fa-cogs ml-3"></i></h3>
+        <h3 class="mb-5 text-center">Compétences</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorem ullam laudantium sint nisi voluptatibus, deserunt molestias. Sed minus in nam sint quas magnam hic esse. Porro totam, accusantium quos?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorem ullam laudantium sint nisi voluptatibus, deserunt molestias. Sed minus in nam sint quas magnam hic esse. Porro totam, accusantium quos?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem dolorem ullam laudantium sint nisi voluptatibus, deserunt molestias. Sed minus in nam sint quas magnam hic esse. Porro totam, accusantium quos?
+        </p>
+      </div>
+    </div>
 
-          <form action="https://formspree.io/xyypawan" method="POST">
-            <input type="hidden" name="_next" value="https://www.yoichitrigalot.com/"/>
+    <div class="row" id="experiences">
+      <div class="experiences">
+        <h3 class="text-center"><i class="fas fa-book ml-3"></i></h3>
+        <h3 class="mb-5 text-center">Expériences</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo architecto aliquid veritatis. Ratione autem expedita vel est mollitia saepe ad culpa! Dicta quos veniam aliquid minima, voluptates magnam molestias maiores!orem ipsum dolor sit amet, consectetur adipisicing elit. Nemo architecto aliquid veritatis. Ratione autem expedita vel est mollitia saepe ad culpa! Dicta quos veniam aliquid minima, voluptates magnam molestias maiores!orem ipsum dolor sit amet, consectetur adipisicing elit. Nemo architecto aliquid veritatis. Ratione autem expedita vel est mollitia saepe ad culpa! Dicta quos veniam aliquid minima, voluptates magnam mole
+        </p>
+      </div>
+    </div>
 
-            <div class="form-group">
-              <input type="text" name="_replyto" id="_replyto" class="form-control" placeholder="Votre email">
-            </div>
+    <div class="row" id="achievements">
+      <div class="realisations">
+        <h3 class="text-center"><i class="fas fa-award ml-3"></i></h3>
+        <h3 class="mb-5 text-center">Réalisations</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sapiente aperiam sed quasi eveniet fugit possimus, aspernatur nulla dolorem fugiat iure. Ratione eveniet hic, optio assumenda alias nulla, modi eius.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sapiente aperiam sed quasi eveniet fugit possimus, aspernatur nulla dolorem fugiat iure. Ratione eveniet hic, optio assumenda alias nulla, modi eius.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sapiente aperiam sed quasi eveniet fugit possimus, aspernatur nulla dolorem fugiat iure. Ratione eveniet hic, optio assumenda alias nulla, modi eius.
+        </p>
+      </div>
+    </div>
 
-            <div class="form-group">
-              <textarea name="message" id="message" class="form-control" rows="5" placeholder="Ecrivez vore message ici"></textarea>
-            </div>
+    <div class="row" id="contact">
+      <div class="contact">
+        <h3 class="text-center"><i class="far fa-address-card ml-3"></i></h3>
+        <h3 class="mb-5 text-center">contact</h3>
+        <div class="row">
+        <div class="col">
+          <div class="socials p-5">
+            <p> 📍 Les Sables d'Olonnes</p>
+            <p> ✉️ yoichi.trigalot@gmail.com</p>
+            <br>
+            <p> Retrouves moi sur mes différents réseaux sociaux </p>
 
-            <div class="row justify-content-center">
-              <button type="submit" class="btn-send">Envoyer</button>
-            </div>
-          </form>
+            <a href="https://github.com/Yoichi-Trigalot" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/yoichi.t/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/y-trigalot/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="email-form pt-5 px-5">
+
+            <h4 class='mb-4'>Contactez moi !</h4>
+
+            <form action="https://formspree.io/xyypawan" method="POST">
+              <input type="hidden" name="_next" value="https://www.yoichitrigalot.com/"/>
+
+              <div class="form-group">
+                <input type="text" name="_replyto" id="_replyto" class="form-control" placeholder="Votre email">
+              </div>
+
+              <div class="form-group">
+                <textarea name="message" id="message" class="form-control" rows="5" placeholder="Ecrivez vore message ici"></textarea>
+              </div>
+
+              <div class="row justify-content-center">
+                <button type="submit" class="btn-send">Envoyer</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
