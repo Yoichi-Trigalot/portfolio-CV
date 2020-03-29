@@ -63,11 +63,9 @@
         window.addEventListener('scroll', () => {
           if (window.scrollY >= window.innerHeight) {
             navbar.classList.remove('hidden');
-            navbar.classList.add('my-navbar-black');
             topButton.classList.remove('hidden');
           } else {
             navbar.classList.add('hidden');
-            navbar.classList.remove('my-navbar-black');
             topButton.classList.add('hidden');
           }
         });
@@ -97,7 +95,7 @@
       </div>
     </div>
 
-  <div class="container">
+  <div class="container shadow-smooth">
     <div class="row" id="about" >
       <div class="infos">
         <h1 class="mb-5 text-center">À propos</h1>
@@ -173,7 +171,7 @@
         <div class="row">
         <div class="col">
           <div class="socials p-5">
-            <p class="" style="font-size: 30px;"> Retrouvez moi sur :</p>
+            <p class="text-center" style="font-size: 30px;"> Retrouvez moi sur :</p>
             <div class="socials pt-5 d-flex justify-content-center">
               <!--  <a href="https://www.facebook.com/yoichi.t/" target="_blank"><i class="fab fa-facebook"></i></a> -->
               <a href="https://www.linkedin.com/in/y-trigalot/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -185,7 +183,7 @@
         <div class="col">
           <div class="email-form pt-5 px-5">
 
-            <p class='mb-4' style="font-size: 30px;">Contactez moi !</p>
+            <p class='mb-4' style="font-size: 30px;">Ou contactez moi !</p>
 
             <form action="https://formspree.io/xyypawan" method="POST">
               <input type="hidden" name="_next" value="https://www.yoichitrigalot.com/"/>
