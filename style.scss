@@ -137,7 +137,7 @@ p {
 
 .my-navbar-black {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   overflow: hidden;
   font-size: 1.2rem;
@@ -151,41 +151,34 @@ p {
 
 .my-navbar-black a {
     text-decoration: none;
-    color: rgba(227, 197, 103,.7);
-    opacity: 0.8
+    color: rgb(227, 197, 103);
+    opacity: 0.8;
   }
 .my-navbar-black  a:hover {
     text-decoration: none;
     color: white;
     opacity: 1;
   }
-.my-navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background-color: transparent;
-  color: white;
-  font-size: 1.2rem;
-  height: 7vh;
-  z-index: 100;
-  transition: all 0.8s;
-}
 
-.my-navbar a {
-  text-decoration: none;
-  color: white;
-  opacity: 0.8
-}
-.my-navbar a:hover {
-  text-decoration: none;
+.my-navbar-black a.active {
   color: white;
   opacity: 1;
 }
 
-a.active {
-  opacity: 1;
+.logo-image {
+  background-image: url('/images/YT-color.png');
+  background-position: center;
+  background-size: cover;
+  height: 5vh;
+  width: 5vh;
+  color: rgb(227, 197, 103);
+
 }
+.my-nav-links {
+  padding: 0 2vw 7px 2vw;
+  font-weight: 200;
+}
+
 a {
   color: black;
   opacity: .6;
@@ -197,10 +190,6 @@ a:hover {
   opacity: 1;
 }
 
-.my-nav-links {
-  padding: 0 2vw 7px 2vw;
-  font-weight: 200;
-}
 .hidden {
   display: none;
 }
