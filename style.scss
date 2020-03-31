@@ -61,6 +61,9 @@ p {
   // border-radius: 3px;
 }
 
+.infos i, .competences i, .experiences i, .realisations i, .parcour i {
+  color: rgba(227, 197, 103, .8);
+}
 .profile-picture {
   background-image: url('/images/profile.png');
   background-position: right 40% bottom 55%;
@@ -77,19 +80,18 @@ p {
 }
 
 .frise {
-  border-left: 1px solid #000;
+  border-right: 1px solid #000;
 }
 
 .years {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(0,0,0, .7);
   width: 100px;
-  height: 100px;
+  height: 90px;
   border-radius: 50%;
   font-weight: bold;
-
+  background-color: rgba(227, 197, 103, .8);
 }
 
 /* SKILLS */
@@ -102,11 +104,12 @@ p {
   border-radius: 50px;
   margin-bottom: 10px;
   margin-right: 10px;
+  background-color: rgba(227, 197, 103, .3);
 }
 
 /* REALISATION */
 .intouch-project {
-  width: 25vw;
+  width: 22vw;
   height: 35vh;
   background-image: url('/images/cover_picture.jpg');
   background-position: center;
@@ -116,7 +119,7 @@ p {
   margin-right: 4vh;
 }
 .airmask-project {
-  width: 25vw;
+  width: 22vw;
   height: 35vh;
   background-image: url('/images/airmask.png');
   background-position: center;
@@ -126,6 +129,10 @@ p {
   margin-right: 4vh;
 }
 
+.project-card:hover {
+  width: 23vw;
+  height: 36vh;
+}
 /* Navbar */
 
 .my-navbar-black {
@@ -133,7 +140,6 @@ p {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  color: white;
   font-size: 1.2rem;
   height: 7vh;
   width: 100vw;
@@ -145,7 +151,7 @@ p {
 
 .my-navbar-black a {
     text-decoration: none;
-    color: white;
+    color: rgba(227, 197, 103,.7);
     opacity: 0.8
   }
 .my-navbar-black  a:hover {
@@ -207,6 +213,7 @@ a:hover {
   padding: 10px 10px 12px;
   border: 1px solid rgb(80,80,80);
   border-radius: 4px;
+  background-color: rgba(227, 197, 103, 0.7);
 
 }
 /* down button */
@@ -216,7 +223,7 @@ a:hover {
   bottom: 5vh;
   left: 48.5%;
   font-size: 3rem;
-  color: white;
+  color: #E3C567;
 }
 /* up button */
 
