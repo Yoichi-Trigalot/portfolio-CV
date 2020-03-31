@@ -163,12 +163,12 @@ p {
 
 .my-navbar-black a {
     text-decoration: none;
-    color: #FAF8D4;
+    color: white;
     opacity: 0.8;
   }
 .my-navbar-black  a:hover {
     text-decoration: none;
-    color: white;
+    color: #FAF8D4;
     opacity: 1;
   }
 
@@ -178,11 +178,11 @@ p {
 }
 
 .logo-image {
-  background-image: url('/images/YT-color.png');
+  background-image: url('/images/YT-white.png');
   background-position: center;
   background-size: cover;
-  height: 5vh;
-  width: 5vh;
+  height: 6vh;
+  width: 6vh;
   color: rgb(227, 197, 103);
 
 }
