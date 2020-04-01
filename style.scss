@@ -10,16 +10,16 @@ body {
   background-color: rgba(0,0,0,0.01) !important;
 }
 
-h1 {
+h1, h4 {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  color: #253C78;
+  color: #294936;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h5 {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  color: #C14953;
+  color: #BDD9BF;
 }
 
 p {
@@ -33,7 +33,7 @@ p {
 
 }
 strong {
-  color: #577399;// #C14953;
+  color: #4D7EA8;// #C14953;
 }
 .shadow-smooth {
   background-color: rgba(0,0,0,0.1) !important;
@@ -63,7 +63,9 @@ strong {
   height: 60%;
   width: auto;
 }
-
+#typewriter strong {
+  color: white;
+}
 .infos, .competences, .experiences, .realisations, .contact, .parcour {
   width: 100vw;
   padding: 10vh;
