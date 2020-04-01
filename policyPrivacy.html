@@ -1,0 +1,91 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Yoïchi Trigalot - Développeur Web - Ruby on rails Freelance (Front End / Back End)</title>
+  <meta name="description" content="Developpeur Web Full stack | Ruby on rails | Freelance - Recherche de mission active">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/e0a91abac6.js" crossorigin="anonymous"></script>
+  <!-- css style sheet -->
+  <link rel="stylesheet" href="style.scss">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Nav icon  -->
+  <link rel="icon" type="image/png" href="/images/Yt.svg"/>
+  <!-- responsive -->
+  <meta name="viewport"  content="width=device-width, initial-scale=1">
+  <!-- Javascript -->
+
+  <!-- Facebook -->
+  <meta property="og:title" content="Yoïchi Trigalot - Développeur Web - Ruby on rails - Freelance ">
+  <meta property="og:image" content="YT.png">
+  <meta property="og:description" content="Bienvenur sur mon site, j'y propose mes services de concepteur et développeur d'application Web, et j'expose aussi mes réalisations, n'hesitez pas à aller le visiter et à entrer en contact !">
+  <meta property="og:site_name" content="yoichitrigalot"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="my-navbar-black fixed-top">
+    <div class="logo-image"></div>
+    <div class="my-nav-items">
+      <a href="" class="my-nav-links hidden active"></a>
+      <a href="/#about" class="my-nav-links">À propos</a>
+      <a href="/#studies" class="my-nav-links">Parcours</a>
+      <a href="/#skills" class="my-nav-links">Compétences</a>
+      <!-- <a href="#experiences" class="my-nav-links">Expériences</a> -->
+      <a href="/#achievements" class="my-nav-links">Réalisations</a>
+      <a href="/#contact" class="my-nav-links">Contact</a>
+    </div>
+  </div>
+
+  <a href="#" class="fixe-top-button hidden"><div><i class="fas fa-chevron-circle-up"></i></div></a>
+
+  <script>
+
+      const initUpdateNavbarOnScroll = () => {
+        const topButton = document.querySelector('.fixe-top-button')
+        if (topButton) {
+          window.addEventListener('scroll', () => {
+            if (window.scrollY >= window.innerHeight) {
+              topButton.classList.remove('hidden');
+            } else {
+              topButton.classList.add('hidden');
+            }
+          });
+        }
+      };
+      initUpdateNavbarOnScroll();
+  </script>
+
+  <div class="container text-justify py-5">
+    <h1 class='text-center my-5'>Politique de confidentialité</h1>
+    <h3>1. nani</h3>
+    <h3>2. nana</h3>
+    <h3></h3>
+    <h3></h3>
+    <h3>5. Envoi d'emails </h3>
+    <p>« Vos informations seront utilisées uniquement pour répondre à votre demande et vous faire parvenir une proposition commerciale si celle-ci est demandée. Vous ne serez pas inscrit à notre newsletter et nous ne partagerons jamais vos données. Consultez notre Politique de confidentialité »</p>
+    <q>Here comes the text</q>
+  </div>
+
+  <div class="footer mt-2">
+    <p>Design & Code with <span style="color: rgb(191, 17, 52)">♥️</span> by Yoïchi Trigalot</p>
+    <a href="policyPrivacy.html"><p style="padding: 0; font-size: 10px" >Politique de confidentialité</p></a>
+  </div>
+
+  <!-- typed script JS -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script type="text/javascript">
+    const instance = () => {new Typewriter('#typewriter', {
+      strings: "Bonjour, moi c'est <strong>Yoïchi</strong><br> <strong>Développeur web Full Stack</strong> - Junior <br>Spécialisé <strong>Ruby on Rails</strong. ",
+      autoStart: true,
+      loop: false,
+      delay: 50,
+    })};
+    setTimeout(() => { instance(); }, 700);
+  </script>
+  <!-- Bootstrap Javascript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</body>
+</html>
