@@ -246,7 +246,13 @@ a.btn-download:hover {
 }
 
 /* down button */
-
+.logo-banner img {
+  position: absolute;
+  top: 5vh;
+  left: 48.5%;
+  width: 3rem;
+  color: white;
+}
 .down-button i {
   position: absolute;
   bottom: 5vh;
