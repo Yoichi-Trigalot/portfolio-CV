@@ -10,10 +10,16 @@ body {
   background-color: rgba(0,0,0,0.01) !important;
 }
 
-h1, h2, h3, h4, h5 {
+h1 {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  color: #294936;
+  color: #577399;
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #C14953;
 }
 
 p {
@@ -22,9 +28,12 @@ p {
   color: rgb(80,80,80);
   margin-bottom: 0.3rem !important;
 }
+#typewriter strong{
+    color: #294936;
 
+}
 strong {
-  color: #294936;
+  color: #C14953;
 }
 .shadow-smooth {
   background-color: rgba(0,0,0,0.1) !important;
@@ -63,9 +72,6 @@ strong {
   // border-radius: 3px;
 }
 
-.infos i, .competences i, .experiences i, .realisations i, .parcour i {
-  color: #294936;
-}
 .profile-picture {
   background-image: url('/images/profile.png');
   background-position: right 40% bottom 55%;
@@ -102,10 +108,14 @@ strong {
   align-items: center;
   font-size: 30px;
   font-weight: bold;
-  color: #294936;
+  color: #C14953;
 }
 
+
 /* SKILLS */
+.competences i {
+  color: #577399;
+}
 
 .tech-skill {
   display: inline;
@@ -115,6 +125,7 @@ strong {
   margin-bottom: 10px;
   margin-right: 10px;
   background-color: #BDD9BF;
+  box-shadow: 0px 4px 5px rgba(0,0,0, 0.1);
 }
 
 /* REALISATION */
@@ -288,10 +299,10 @@ a.btn-download:hover {
 /* CONTACT */
 
 .socials a {
-  color: rgb(80,80,80);
+  opacity: .8;
 }
 .socials a:hover {
-  color: rgb(80,80,80);
+  opacity: 1;
 }
 
 .malt {
@@ -326,18 +337,20 @@ a.btn-download:hover {
 .btn-send {
   width: 100%;
   padding: 5px 10px 5px;
-  border: 1px solid rgba(80,80,80, 0.3);
-  color: rgba(80,80,80, .6);
+  color: rgb(80,80,80);
   font-weight: normal;
   border-radius: 4px;
+  background-color: #BDD9BF;
+  box-shadow: 0px 4px 5px rgba(0,0,0, 0.1);
+
   opacity: 1;
   transition: 0.5s;
 }
 .btn-send:hover {
   opacity: 1;
   font-weight: normal;
-  border: 1px solid rgba(0,0,0, .5);
-  color: rgb(80,80,80);
+  color: white;
+  background-color: #294936;
 
 }
 
