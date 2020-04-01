@@ -35,8 +35,8 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="137.47667"
-     inkscape:cx="271.7617"
+     inkscape:cy="163.19095"
+     inkscape:cx="297.47599"
      inkscape:zoom="0.35"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -62,37 +62,37 @@
      inkscape:groupmode="layer"
      inkscape:label="Calque 1">
     <g
-       style="fill:#000000"
+       style="fill:#ffffff"
        id="g22"
        clip-path="url(#clipPath26)"
        transform="matrix(1.4111111,0,0,-1.4111111,-53.408183,270.0637)">
       <g
-         style="fill:#000000"
+         style="fill:#ffffff"
          id="g28"
          transform="translate(105,108.1606)">
         <path
            d="m 0,0 c -21.564,0 -39.107,-17.543 -39.107,-39.107 0,-21.564 17.543,-39.108 39.107,-39.108 21.563,0 39.107,17.544 39.107,39.108 C 39.107,-17.543 21.563,0 0,0 m 0,-82.215 c -23.77,0 -43.107,19.338 -43.107,43.108 C -43.107,-15.338 -23.77,4 0,4 23.77,4 43.107,-15.338 43.107,-39.107 43.107,-62.877 23.77,-82.215 0,-82.215"
-           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
            id="path30"
            inkscape:connector-curvature="0" />
       </g>
       <g
-         style="fill:#000000"
+         style="fill:#ffffff"
          id="g32"
          transform="translate(104.3071,85.0463)">
         <path
            d="m 0,0 -11.016,-21.398 v -12.211 h -5.578 v 12.093 L -27.328,0 h 6.351 l 6.61,-14.414 c 0.078,-0.172 0.312,-0.82 0.703,-1.945 h 0.07 c 0.141,0.5 0.399,1.148 0.774,1.945 L -5.906,0 Z"
-           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
            id="path34"
            inkscape:connector-curvature="0" />
       </g>
       <g
-         style="fill:#000000"
+         style="fill:#ffffff"
          id="g36"
          transform="translate(131.0957,80.312)">
         <path
            d="m 0,0 h -9.656 v -28.875 h -5.578 V 0 h -9.633 V 4.734 H 0 Z"
-           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
            id="path38"
            inkscape:connector-curvature="0" />
       </g>
